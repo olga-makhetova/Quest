@@ -1,0 +1,53 @@
+.quest-table { border-collapse: collapse; width: 100%; }
+
+.quest-table caption {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    line-height: 1.5;
+    caption-side: top;
+    border: 1px solid;
+}
+
+.quest-table td {
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid;
+    transition: filter 0.15s;
+}
+.quest-table td:hover  { filter: brightness(0.95); }
+.quest-table td:active { filter: brightness(0.9); }
+
+/* normal — caption */
+.quest-table.quest-normal caption {
+    background: #f1efe8;
+    color: #2c2c2a;
+    border-color: #b4b2a9;
+}
+
+/* win — caption */
+.quest-table.quest-win caption {
+    background: #eaf3de;
+    color: #173404;
+    border-color: #97c459;
+}
+
+/* lose — caption */
+.quest-table.quest-lose caption {
+    background: #fcebeb;
+    color: #501313;
+    border-color: #f09595;
+}
+
+/* ячейки всегда в цвете normal */
+.quest-table.quest-normal td,
+.quest-table.quest-win td,
+.quest-table.quest-lose td {
+    background: #f1efe8;
+    color: #2c2c2a;
+    border-color: #b4b2a9;
+}
