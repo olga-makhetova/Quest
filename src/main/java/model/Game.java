@@ -14,7 +14,7 @@ public class Game {
 
     private int currentCardId = 0;
 
-    public void setCurrentCardId(int currentCardId) {
+    public void setCurrentCard(int currentCardId) {
         this.currentCardId = currentCardId;
     }
 
@@ -34,4 +34,7 @@ public class Game {
         return cards[currentCardId].getState().getCssClassName();
     }
 
+    public boolean isWin() { return cards[currentCardId].getState() == CardState.WIN; }
+
+    public boolean isEnd() { return cards[currentCardId].getState() != CardState.NORMAL; }
 }

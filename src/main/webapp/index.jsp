@@ -12,10 +12,7 @@
 <body>
 <h1>Квест!</h1>
 
-
-
-
-
+<!-- Таблица с вопросами и ответами -->
 <table class="quest-table ${game.getCssClassName()}">
     <caption>${game.getQuestion()}</caption>
 
@@ -32,7 +29,10 @@
 
 </table>
 
-<a href="/quest/go?cardId=0"> Начать заново</a>
+<p>Всего игр сыграно: ${sessionScope.gameCount}</p>
+<p>Всего побед: ${sessionScope.winCount}</p>
+<p><a href="/quest/go?cardId=0"> Начать заново</a></p>
+
 
 </body>
 </html>
